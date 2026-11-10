@@ -7,3 +7,27 @@
     --pozadie-stránky: hsl(90, 30%, 96%);
     --žltá: oklch(82% 0.15 85);
 }
+
+body{
+    background-color: var(--pozadie-stránky);
+}
+
+header{
+    padding: 15px 48px;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: var(--tmavozelena);
+}
+
+nav a{
+    color: var(--tmavozelena);
+    text-decoration: none;
+    margin-left: 30px;
+    font-family: 'Work Sans', sans-serif;
+}

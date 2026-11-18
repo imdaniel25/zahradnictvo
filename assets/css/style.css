@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap');
+
+/* FARBY */
+:root {
+    --les: oklch(38% 0.07 150);
+    --listy: oklch(65% 0.14 140);
+    --hlina: hsl(25, 35%, 30%);
+    --svetla: hsl(90, 30%, 96%);
+    --slnko: oklch(82% 0.15 85);
+}
+
+/* ZAKLAD */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--svetla);
+    color: var(--hlina);
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2, h3, .hlavicka__logo {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HLAVICKA */
+.hlavicka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 5%;
+    background-color: white;
+}
+
+.hlavicka__logo {
+    order: -1;
+    margin: 0;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--les);
+}
+
+.hlavicka__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hlavicka__menu a {
+    color: var(--les);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.hlavicka__menu a:hover {
+    color: var(--listy);
+}
+
+/* KONTAKT */
+.hlavicka__kontakt {
+    display: none;
+}
+
+/* UVOD */
+.uvod {
+    background-color: var(--les);
+    color: white;
+    text-align: center;
+    padding: 3rem 5%;
+}
+
+.uvod img {
+    display: block;
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+}
+
+.uvod__obsah {
+    max-width: 52rem;
+    margin: 1.5rem auto 0;
+}
+
+.uvod h1 {
+    font-size: 2.4rem;
+    line-height: 1.05;
+    margin: 0 0 1rem;
+}
+
+.uvod p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* TLACIDLO POD UVODOM */
+.uvod__tlacidlo {
+    text-align: center;
+    padding: 2rem 5% 0;
+}
+
+.uvod__tlacidlo a {
+    display: inline-block;
+    padding: 0.9rem 1.5rem;
+    background-color: var(--les);
+    color: white;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 3px 8px #0002;
+}
+
+.uvod__tlacidlo a:hover {
+    background-color: var(--listy);
+    color: var(--les);
+}
+
+/* SLUZBY */
+.sluzby {
+    padding: 3rem 5%;
+}
+
+.sluzby h2, .postup h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--hlina);
+    margin: 0 0 2rem;
+}
+
+.sluzby__zoznam {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sluzby__karta {
+    background-color: white;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #0001;
+}
+
+.sluzby__karta img {
+    display: block;
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.sluzby__karta h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--hlina);
+    margin: 1rem 1rem 0.4rem;
+}
+
+.sluzby__karta p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0 1rem 1.4rem;
+}
+
+/* POSTUP */
+.postup {
+    padding: 1rem 5% 3rem;
+}
+
+.postup__zoznam {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.postup__krok {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.1rem;
+    text-align: center;
+}
+
+.postup__krok p {
+    margin: 0;
+    color: var(--les);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* PATICKA */
+.paticka {
+    background-color: var(--les);
+    color: white;
+    padding: 2rem 5% 1rem;
+}
+
+.paticka__obsah {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.paticka h2, .paticka h3 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+}
+
+.paticka p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0 0 0.4rem;
+}
+
+/* SOCIALNE SIETE */
+.paticka__socialne {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.paticka__socialne a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #ffffff66;
+    border-radius: 50%;
+    color: white;
+}
+
+.paticka__socialne a:hover {
+    color: var(--slnko);
+    border-color: var(--slnko);
+}
+
+.paticka__socialne svg {
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+}
+
+.paticka__socialne rect,
+.paticka__socialne circle {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+}
+
+.paticka__socialne .paticka__bodka {
+    fill: currentColor;
+    stroke: none;
+}
+
+/* SPODNY TEXT */
+.paticka > p {
+    border-top: 1px solid #ffffff33;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    font-size: 0.75rem;
+}
+
+/* TABLET */
+@media (min-width: 600px) {
+
+    .uvod {
+        padding: 3rem 5% 4rem;
+    }
+
+    .uvod h1 {
+        font-size: 3.8rem;
+    }
+
+    .sluzby__zoznam {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sluzby__karta {
+        width: calc(33.333% - 1rem);
+    }
+
+    .sluzby__karta:last-child {
+        width: 100%;
+    }
+
+    .postup__zoznam {
+        max-width: 34rem;
+    }
+
+}
+
+/* POCITAC */
+@media (min-width: 960px) {
+
+    /* HLAVICKA */
+    .hlavicka {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding: 1.5rem 5%;
+    }
+
+    .hlavicka__menu {
+        justify-content: flex-start;
+    }
+
+    .hlavicka__logo {
+        order: 0;
+        text-align: center;
+    }
+
+    .hlavicka__kontakt {
+        display: inline-block;
+        justify-self: end;
+        color: var(--les);
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .hlavicka__kontakt:hover {
+        color: var(--listy);
+    }
+
+    /* UVOD */
+    .uvod {
+        padding: 4rem 10%;
+    }
+
+    .uvod h1 {
+        font-size: 4rem;
+    }
+
+    /* SLUZBY */
+    .sluzby__karta,
+    .sluzby__karta:last-child {
+        width: calc(25% - 1.125rem);
+    }
+
+    /* POSTUP */
+    .postup__zoznam {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 100%;
+    }
+
+    /* PATICKA */
+    .paticka__obsah {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .paticka__obsah > div {
+        flex: 1;
+    }
+
+}
